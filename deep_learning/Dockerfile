@@ -62,5 +62,7 @@ USER ros
 RUN /bin/bash -c '. /opt/ros/indigo/setup.bash; cd /home/ros/catkin_ws; catkin_make'
 
 USER root
+RUN apt install -y openssh-client
+
 
 CMD ["/bin/bash"]

@@ -1,1 +1,1 @@
-sudo docker run -it --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" -v /tmp/.X11-unix:/tmp/.X11-unix:rw --name dl dl
+sudo docker run -it --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" -v /tmp/.X11-unix:/tmp/.X11-unix:rw -v /home/zhiang/catkin_ws/src/deep_learning/data_preprocess/orthaffine_projection/:/home/ros/catkin_ws/src/deep_learning/deep_learning/data_preprocess/orthaffine_projection --name dl zhiangchen/deep_learning
